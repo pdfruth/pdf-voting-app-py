@@ -1,6 +1,6 @@
 schemaVersion: 2.1.0
 metadata:
-  name: voting-app-py
+  name: pdf-voting-app-py
 components:
   - name: python
     container:
@@ -11,7 +11,7 @@ components:
       memoryLimit: 2G
       mountSources: true
       env:
-        - value: new-redis.voting-app-demo.svc.cluster.local
+        - value: new-redis.pdf-voting-app-demo.svc.cluster.local
           name: REDIS_HOST
         - value: admin
           name: REDIS_PASSWORD
